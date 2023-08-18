@@ -1,0 +1,50 @@
+.pageheader {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: end;
+
+  &__content {
+    position: absolute;
+    max-width: 86rem;
+    z-index: 1;
+    left: 0;
+
+    &--title {
+      padding-bottom: 3rem;
+      font-family: var(--second-font);
+      font-size: 8rem;
+      font-weight: 700;
+      line-height: 8.6rem;
+    }
+
+    &--description {
+      max-width: 44.7rem;
+      padding-bottom: 3rem;
+      color: var(--txt-color-dark);
+      font-variant-numeric: lining-nums proportional-nums;
+      line-height: 2.4rem;
+    }
+  }
+
+  &__image {
+    position: relative;
+    max-width: 91.3rem;
+    width: 100%;
+    img {
+      border-radius: 1rem;
+    }
+
+    &::after {
+      content: "";
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5.5px);
+      position: absolute;
+      width: 30%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 1rem;
+    }
+  }
+}

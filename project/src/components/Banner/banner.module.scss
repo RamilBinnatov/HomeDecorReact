@@ -1,0 +1,31 @@
+.banner {
+  background-image: url(../../assets/image/banner.png);
+  width: 100%;
+  height: 36.7rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 14rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.9rem;
+
+  &--title {
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+    font-family: var(--sect-font);
+    color: var(--txt-color-white);
+  }
+  &--description {
+    color: var(--txt-color-white);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    max-width: 44.5rem;
+    width: 100%;
+    line-height: 2.4rem;
+  }
+}

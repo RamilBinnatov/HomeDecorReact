@@ -1,0 +1,28 @@
+.products {
+  margin-top: 12.8rem;
+
+  .sectHead {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5.9rem;
+  }
+
+  .product-grid {
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    row-gap: 3rem;
+    column-gap: 1.8rem;
+  }
+
+  .action {
+    padding-top: 3.2rem;
+  }
+  .action a {
+    color: var(--txt-color-bej);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-decoration: underline;
+  }
+}

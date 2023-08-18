@@ -1,0 +1,22 @@
+.slider {
+  margin: 6rem 0 0 0;
+
+  .slick-next {
+    bottom: -4rem !important;
+    right: 1rem;
+    top: auto;
+  }
+
+  .slick-prev {
+    bottom: -4rem !important;
+    right: 4rem !important;
+    top: auto;
+    left: auto;
+  }
+
+  .slick-track {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+}

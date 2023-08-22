@@ -25,7 +25,9 @@ function Banner() {
     <div>
       {banners.map((banner, index) => (
         <div className={classes.banner} key={index}>
-          <div className={classes["banner--title"]}>{banner.title}</div>
+          <div className={classes["banner--title"]}>
+            <h2>{banner.title}</h2>
+          </div>
           <div className={classes["banner--description"]}>
             {banner.description}
           </div>

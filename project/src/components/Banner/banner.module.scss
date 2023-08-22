@@ -16,8 +16,11 @@
     font-size: 6.4rem;
     font-weight: 700;
     line-height: 5.2rem;
-    font-family: var(--sect-font);
-    color: var(--txt-color-white);
+    font-family: var(--sec-font);
+
+    h2 {
+      color: var(--txt-color-white);
+    }
   }
   &--description {
     color: var(--txt-color-white);
@@ -27,5 +30,6 @@
     max-width: 44.5rem;
     width: 100%;
     line-height: 2.4rem;
+    font-family: var(--main-font);
   }
 }

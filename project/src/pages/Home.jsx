@@ -28,24 +28,22 @@ function Home() {
     <main>
       <PageHeader {...pageHeader} />
       <Slider>
-        <SliderCard />
-        <SliderCard />
-        <SliderCard />
-        <SliderCard />
-        <SliderCard />
+        {<SliderCard />}
+        {<SliderCard />}
+        {<SliderCard />}
+        {<SliderCard />}
       </Slider>
       <AboutSection />
       <Banner />
       <ProductList />
-      <Slider>
+      <Slider head={"MOST POPULAR"}>
         <ProductCard />
         <ProductCard />
         <ProductCard />
         <ProductCard />
         <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+      </Slider>
+      <Slider head={"COLLECTIONS"}>
         <ProductCard />
         <ProductCard />
         <ProductCard />

@@ -1,9 +1,10 @@
 import React from "react";
+import Breadcrumbs from "../components/BreadCrumbs";
 
 function Sale() {
   return (
     <div>
-      <p>sdgsdgs</p>
+      <Breadcrumbs />
     </div>
   );
 }

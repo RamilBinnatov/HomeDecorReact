@@ -7,7 +7,7 @@ function IconButton({ children, href, disabled = false }) {
       <button
         disabled={disabled}
         onClick={() => (window.location.href = href)}
-        className="btni"
+        className="btn"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

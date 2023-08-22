@@ -1,45 +1,30 @@
-import React from "react";
+import React, { Children } from "react";
 import "./productList.scss";
 import ProductCard from "../ProductCard";
 import { Link } from "react-router-dom";
 
-function ProductList() {
+function ProductList({ children, count = 4 }) {
   return (
     <div className="products">
       <div className="container">
-        <div className="sectHead">
-          <div className="head">PRODUCTS</div>
-          <div className="action">
-            {/* <a href="">SEE ALL</a> */}
-            <Link to={"/about"}>SEE ALL</Link>
-          </div>
-        </div>
+        {(() => {
+          if (window.location.pathname === "/home") {
+            return (
+              <div className="sectHead">
+                <div className="head">PRODUCTS</div>
+                <div className="action">
+                  <Link to={"/about"}>SEE ALL</Link>
+                </div>
+              </div>
+            );
+          }
+        })()}
 
-        <div className="product-grid">
-          <div className="grid-item">
-            <ProductCard />
-          </div>
-          <div className="grid-item">
-            <ProductCard />
-          </div>
-          <div className="grid-item">
-            <ProductCard />
-          </div>
-          <div className="grid-item">
-            <ProductCard />
-          </div>
-          <div className="grid-item">
-            <ProductCard />
-          </div>
-          <div className="grid-item">
-            <ProductCard />
-          </div>
-          <div className="grid-item">
-            <ProductCard />
-          </div>
-          <div className="grid-item">
-            <ProductCard />
-          </div>
+        <div
+          className="product-grid"
+          style={{ "grid-template-columns": `repeat(${count}, 1fr)` }}
+        >
+          {children}
         </div>
       </div>
     </div>

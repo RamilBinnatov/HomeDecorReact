@@ -1,9 +1,10 @@
 import React from "react";
+import Breadcrumbs from "../components/BreadCrumbs";
 
 function Contact() {
   return (
     <div>
-      <p>gdsgsd</p>
+      <Breadcrumbs />
     </div>
   );
 }

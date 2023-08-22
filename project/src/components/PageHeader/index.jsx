@@ -1,23 +1,21 @@
 import React from "react";
-import classes from "./pageHeader.module.scss";
+import "./pageHeader.scss";
 import IconButton from "../IconButton";
 
 function PageHeader({ title, description, image }) {
   return (
     <>
       <div className="container">
-        <div className={classes.pageheader}>
-          <div className={classes["pageheader__content"]}>
-            <div className={classes["pageheader__content--title"]}>{title}</div>
-            <div className={classes["pageheader__content--description"]}>
-              {description}
-            </div>
-            <div className={classes["pageheader__content--button"]}>
-              <IconButton children={"Shop Now"} />
-            </div>
+        <div className="main-header">
+          <div className="main-header__left">
+            <h1 className="main-header__left--title">{title}</h1>
+            <p className="main-header__left--description">{description}</p>
+            <IconButton />
           </div>
-          <div className={classes["pageheader__image"]}>
-            <img src={image} alt="" />
+          <div className="main-header__right">
+            <div className="main-header__right--image">
+              <img style={{ borderRadius: "1rem" }} src={image} alt="" />
+            </div>
           </div>
         </div>
       </div>

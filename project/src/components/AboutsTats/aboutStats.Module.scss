@@ -1,0 +1,51 @@
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 13rem;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.7rem;
+
+    &--number {
+      font-family: var(--secondary-font);
+      font-size: 6.4rem;
+      line-height: 5.2rem;
+      font-weight: 700;
+      color: var(--dropdown-text-color);
+    }
+
+    &--text {
+      font-family: var(--main-font);
+      font-size: 2rem;
+      line-height: 2.8rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .stats {
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 10rem;
+
+    &__item {
+      gap: 1.5rem;
+
+      &--number {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+      }
+
+      &--text {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+      }
+    }
+  }
+}

@@ -1,103 +1,122 @@
 @import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Raleway:wght@400;500&display=swap");
 
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-  outline: none;
-  border: 0;
-}
-
-:root {
-  --main-font: "Raleway", sans-serif;
-  --second-font: "Didot", serif;
-  --txt-color-white: #ffffff;
-  --txt-color-bej: #b8926a;
-  --main-bg: #eae6df;
-  --main-button-txt: #eae6df;
-  --txt-color-dark: #2d2d2b;
-  --main-input-bg: #eae6df;
-  --border-color: #d4c8be;
-  --btn-bg-color: #b8926a;
-  --hover-btn-bg-color: #a5825d;
-  --disabled-btn-bg: #b0b0b0;
-  --secondary-btn-br-color: #b8926a;
-  --secondary-btn-disabled-br-color: #b0b0b0;
-  --secondary-btn-color: #b8926a;
-  --secondary-btn-hover-color: #a5825d;
-  --scondary-btn-disabled-color: #b0b0b0;
-  --dropdown-text-color: #b8926a;
-  --dropdown-bg-color: #eae6df;
-  --dropdown-br-color: #b8926a;
-
-  --grey: #b0b0b0;
-}
-
-body {
-  font-family: var(--main-font);
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 400;
-  color: var(--txt-color-dark);
-  background: var(--main-bg);
-}
-
-html {
-  font-size: 62.5%;
   box-sizing: border-box;
-}
-
-.container {
-  max-width: 147rem;
-  width: 100%;
-  margin: auto;
 }
 
 a {
   text-decoration: none;
-  transition: all 0.4s linear !important;
+  font-family: var(--main-font);
+
+  color: var(--main-text-color);
 }
 
 ul,
 ol {
-  list-style: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 img {
   width: 100%;
   height: 100%;
-  display: block;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 h1 {
   font-size: 7.2rem;
+  line-height: 8.6rem;
+}
+
+p {
+  font-family: var(--main-font);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: var(--second-font);
+  font-family: "Didot", serif;
   font-weight: 700;
+  color: var(--main-text-color);
 }
 
 h2 {
-  font-family: var(--second-font);
   font-size: 6.4rem;
+  line-height: 5.2rem;
 }
 
 h3 {
   font-size: 4.8rem;
+  line-height: 5.2rem;
 }
 
 h4 {
   font-size: 2.4rem;
+  line-height: 3.2rem;
 }
 
-.slick-slide > div {
-  display: grid;
-  place-items: center;
+body {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  background-color: var(--main-bg);
+  color: var(--main-text-color);
+  font-family: var(--second-font);
+}
+
+:root {
+  --main-text-color: #2d2d2b;
+  --main-font: "Raleway", sans-serif;
+  --second-font: "Didot", serif;
+  --main-bg: #eae6df;
+  --btn-txt-color: #eae6df;
+  --btn-bg-color: #b8926a;
+  --hover-btn-bg-color: #a5825d;
+  --main-button-disabled-background-color: #b0b0b0;
+  --secondary-button-border-color: #b8926a;
+  --secondary-button-hover-border-color: #a5825d;
+  --secondary-button-disabled-border-color: #b0b0b0;
+  --main-input-text-color: #2d2d2b;
+  --main-input-border-color: #d4c8be;
+  --main-input-background-color: #eae6df;
+  --dropdown-text-color: #b8926a;
+  --dropdown-border-color: #b8926a;
+  --dropdown-background-color: #eae6df;
+  --txt-color-white: #fff;
+}
+
+.container {
+  max-width: 138rem;
+  margin: auto;
+}
+
+.btn {
+  width: 33rem;
+  height: 5.3rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+}
+@media (max-width: 768px) {
+  .btn {
+    max-width: 25rem;
+    height: 4.8rem;
+    gap: 1.6rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+  }
 }

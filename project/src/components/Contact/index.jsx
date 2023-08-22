@@ -1,7 +1,6 @@
 import React from "react";
 import "./contact.scss";
 import Button from "../Button";
-import img from "../../assets/image/contact.png";
 
 function ContactSection() {
   return (

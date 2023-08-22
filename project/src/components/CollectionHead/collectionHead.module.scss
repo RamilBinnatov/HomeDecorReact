@@ -1,0 +1,15 @@
+.collectionHead {
+  margin-top: 4.9rem;
+
+  &--description {
+    max-width: 56.3rem;
+    width: 100%;
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin: 4.5rem 0;
+    opacity: 0.8;
+  }
+}

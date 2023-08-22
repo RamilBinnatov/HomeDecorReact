@@ -29,7 +29,11 @@ function AboutSection() {
               maiores alias consequatur aut perferendis doloribus asperiores
               repellat.
             </div>
-            <IconButton />
+            {(() => {
+              if (window.location.pathname === "/home") {
+                return <IconButton />;
+              }
+            })()}
           </div>
         </div>
       </div>

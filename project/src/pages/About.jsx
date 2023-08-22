@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutSection from "../components/About";
-import AboutStats from "../components/AboutsTats";
+import AboutStats from "../components/AboutStats";
+import Breadcrumbs from "../components/BreadCrumbs";
+import changeTitle from "../helpers/change";
 
 function About() {
+  useEffect(() => {
+    changeTitle("About");
+  }, []);
+
   return (
     <>
-      <div className="container">
-        <div className="pageHead">
-          <div className="tit">Home | About </div>
-        </div>
+      <div className="main">
+        <Breadcrumbs />
         <AboutSection />
         <AboutStats />
       </div>

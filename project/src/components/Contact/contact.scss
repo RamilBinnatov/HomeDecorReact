@@ -3,17 +3,20 @@
 
   input,
   textarea {
-    max-width: 56.3rem;
     width: 100%;
     height: 5.4rem;
     background-color: var(--main-bg);
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--main-input-border-color);
     display: block;
     margin: 1.5rem 0;
+    outline: none;
   }
-
+  .input-area {
+    max-width: 56.3rem;
+    width: 100%;
+  }
   textarea {
     height: 13.6rem;
   }
@@ -24,7 +27,8 @@
   input[type="text"]:valid,
   input[type="email"]:invalid,
   textarea:valid {
-    color: var(--grey);
+    color: var(--main-button-disabled-background-color);
+    font-family: var(--main-font);
   }
 
   .main {

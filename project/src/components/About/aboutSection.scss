@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     gap: 6.1rem;
+    font-family: var(--main-font);
   }
 }
 
@@ -31,4 +32,28 @@
 
 .about {
   margin-top: 12.8rem;
+}
+
+@media screen and (max-width: 750px) {
+  .content {
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 10rem;
+
+    .img {
+      max-width: 90%;
+    }
+    .text {
+      max-width: 100%;
+      gap: 3rem;
+    }
+
+    .title {
+      font-family: var(--main-font);
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2.4rem;
+    }
+  }
 }

@@ -1,0 +1,19 @@
+.pageMain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+}
+
+.onPage {
+  display: flex;
+  justify-content: space-between;
+
+  .sort {
+    position: relative;
+    top: 12rem;
+  }
+}

@@ -111,6 +111,10 @@ body {
   font-weight: 500;
   border: none;
 }
+
+textarea {
+  resize: none;
+}
 @media (max-width: 768px) {
   .btn {
     max-width: 25rem;

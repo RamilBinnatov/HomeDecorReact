@@ -8,6 +8,10 @@
     width: 100%;
     object-fit: contain;
     position: relative;
+
+    img {
+      border-radius: 1rem;
+    }
   }
 
   .icon {

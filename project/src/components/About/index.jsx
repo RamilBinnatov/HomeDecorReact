@@ -30,7 +30,7 @@ function AboutSection() {
               repellat.
             </div>
             {(() => {
-              if (window.location.pathname === "/home") {
+              if (window.location.pathname === "/") {
                 return <IconButton />;
               }
             })()}

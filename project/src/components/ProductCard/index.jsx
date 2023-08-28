@@ -1,8 +1,7 @@
 import React from "react";
-import ProductImg from "../../assets/image/product.png";
 import "./productCard.scss";
 
-function ProductCard() {
+function ProductCard({ name, price, img }) {
   return (
     <div className="card">
       <div className="cardImg">
@@ -20,10 +19,10 @@ function ProductCard() {
             />
           </svg>
         </div>
-        <img src={ProductImg} alt="" />
+        <img src={img} alt="" />
       </div>
-      <div className="title">Grayson Premium Grey Wash Nest of Tables</div>
-      <div className="price">140$</div>
+      <div className="title">{name}</div>
+      <div className="price">{price}$</div>
     </div>
   );
 }

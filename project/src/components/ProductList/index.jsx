@@ -1,6 +1,5 @@
 import React, { Children } from "react";
 import "./productList.scss";
-import ProductCard from "../ProductCard";
 import { Link } from "react-router-dom";
 
 function ProductList({ children, count = 4 }) {
